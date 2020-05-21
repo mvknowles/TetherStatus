@@ -18,16 +18,6 @@
 		4DC47CE92476786900E692B4 /* CWInterface_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC47CE82476786900E692B4 /* CWInterface_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4D566680246B7AEF0049AA64 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D56667C246B7AEF0049AA64 /* TetherInfo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4D566640246B79130049AA64;
-			remoteInfo = TetherInfo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		4D155D27246CE5A7001A9B97 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4D3A9FDA246ED5270037EE20 /* BluetoothDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +30,6 @@
 		4D56666E246B7A2A0049AA64 /* TetherStatus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TetherStatus.entitlements; sourceTree = "<group>"; };
 		4D566674246B7A8C0049AA64 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		4D566676246B7A8D0049AA64 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
-		4D56667C246B7AEF0049AA64 /* TetherInfo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TetherInfo.xcodeproj; path = ../TetherInfo/TetherInfo.xcodeproj; sourceTree = "<group>"; };
 		4DC47CE62476784E00E692B4 /* CWTetherDevice_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWTetherDevice_Private.h; path = ../../TetherInfo/TetherInfo/CWTetherDevice_Private.h; sourceTree = "<group>"; };
 		4DC47CE82476786900E692B4 /* CWInterface_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWInterface_Private.h; path = ../../TetherFinder/TetherFinder/CWInterface_Private.h; sourceTree = "<group>"; };
 		4DC47CEA247678C600E692B4 /* TetherStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TetherStatus.h; sourceTree = "<group>"; };
@@ -61,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				4D155D27246CE5A7001A9B97 /* README.md */,
-				4D56667C246B7AEF0049AA64 /* TetherInfo.xcodeproj */,
 				4D566660246B7A230049AA64 /* TetherStatus */,
 				4D56665F246B7A230049AA64 /* Products */,
 				4D566682246B7B060049AA64 /* Frameworks */,
@@ -93,14 +81,6 @@
 				4DC47CEA247678C600E692B4 /* TetherStatus.h */,
 			);
 			path = TetherStatus;
-			sourceTree = "<group>";
-		};
-		4D56667D246B7AEF0049AA64 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4D566681246B7AEF0049AA64 /* TetherInfo.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4D566682246B7B060049AA64 /* Frameworks */ = {
@@ -169,28 +149,12 @@
 			mainGroup = 4D566655246B7A230049AA64;
 			productRefGroup = 4D56665F246B7A230049AA64 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 4D56667D246B7AEF0049AA64 /* Products */;
-					ProjectRef = 4D56667C246B7AEF0049AA64 /* TetherInfo.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				4D56665D246B7A230049AA64 /* TetherStatus */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		4D566681246B7AEF0049AA64 /* TetherInfo.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = TetherInfo.framework;
-			remoteRef = 4D566680246B7AEF0049AA64 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4D56665C246B7A230049AA64 /* Resources */ = {

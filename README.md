@@ -1,8 +1,9 @@
 #  TetherStatus
 
-## Entitlements
-We need an entitlement to creaete outgoing connections. This project will fail without it.
+This is an app that shows the battery strength, signal strength and network type of the iPhone tethered to a Mac.
 
-## Making sure there's no dock icon
-Open Info.plist and add the following property
-Application is agent (UIElement) = YES
+![The app in use](screenshot.png "The app in use")
+
+I created this app so users wouldn't have to click on the wireless status bar icon to view the details.
+
+The app uses APIs internal to MacOS which were identified by debugging WiFiAgent and some other inbuilt applications.

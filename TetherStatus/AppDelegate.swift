@@ -40,9 +40,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, CWEventDelegate {
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        //could be useful NSWorkspace.shared.menuBarOwningApplication.dispatch
-
-        //v.view!.window!.preferredBackingLocation
 
         /* This is a really frustrating problem. When NSStatusBar gets too long, it simply
          disappears. Discussion here:
@@ -160,6 +157,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, CWEventDelegate {
     @objc func toggleShowDeviceName(item: NSMenuItem) {
         item.state = item.state == NSControl.StateValue.on ? NSControl.StateValue.off : NSControl.StateValue.on
         self.showDeviceName = item.state == NSControl.StateValue.on
+        self.updateStatus()
     }
     
     @objc func exitAction(item: NSMenuItem) {

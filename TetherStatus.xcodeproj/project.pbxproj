@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D02B92F24862EDB000EE3C3 /* CWInterface_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D02B92E24862EDB000EE3C3 /* CWInterface_Private.h */; };
+		4D02B93124862EE8000EE3C3 /* CWTetherDevice_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D02B93024862EE8000EE3C3 /* CWTetherDevice_Private.h */; };
 		4D3A9FDB246ED5270037EE20 /* BluetoothDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A9FDA246ED5270037EE20 /* BluetoothDelegate.swift */; };
 		4D566662246B7A230049AA64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D566661246B7A230049AA64 /* AppDelegate.swift */; };
 		4D566664246B7A230049AA64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D566663246B7A230049AA64 /* ContentView.swift */; };
@@ -14,11 +16,11 @@
 		4D56666C246B7A2A0049AA64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D56666A246B7A2A0049AA64 /* Main.storyboard */; };
 		4D566678246B7A8D0049AA64 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D566674246B7A8C0049AA64 /* Errors.swift */; };
 		4D566679246B7A8D0049AA64 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D566676246B7A8D0049AA64 /* ImageManager.swift */; };
-		4DC47CE72476784E00E692B4 /* CWTetherDevice_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC47CE62476784E00E692B4 /* CWTetherDevice_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DC47CE92476786900E692B4 /* CWInterface_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC47CE82476786900E692B4 /* CWInterface_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D02B92E24862EDB000EE3C3 /* CWInterface_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWInterface_Private.h; sourceTree = "<group>"; };
+		4D02B93024862EE8000EE3C3 /* CWTetherDevice_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWTetherDevice_Private.h; sourceTree = "<group>"; };
 		4D155D27246CE5A7001A9B97 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4D3A9FDA246ED5270037EE20 /* BluetoothDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDelegate.swift; sourceTree = "<group>"; };
 		4D56665E246B7A230049AA64 /* TetherStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TetherStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,8 +32,6 @@
 		4D56666E246B7A2A0049AA64 /* TetherStatus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TetherStatus.entitlements; sourceTree = "<group>"; };
 		4D566674246B7A8C0049AA64 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		4D566676246B7A8D0049AA64 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
-		4DC47CE62476784E00E692B4 /* CWTetherDevice_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWTetherDevice_Private.h; path = ../../TetherInfo/TetherInfo/CWTetherDevice_Private.h; sourceTree = "<group>"; };
-		4DC47CE82476786900E692B4 /* CWInterface_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWInterface_Private.h; path = ../../TetherFinder/TetherFinder/CWInterface_Private.h; sourceTree = "<group>"; };
 		4DC47CEA247678C600E692B4 /* TetherStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TetherStatus.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,8 +67,8 @@
 		4D566660246B7A230049AA64 /* TetherStatus */ = {
 			isa = PBXGroup;
 			children = (
-				4DC47CE82476786900E692B4 /* CWInterface_Private.h */,
-				4DC47CE62476784E00E692B4 /* CWTetherDevice_Private.h */,
+				4D02B93024862EE8000EE3C3 /* CWTetherDevice_Private.h */,
+				4D02B92E24862EDB000EE3C3 /* CWInterface_Private.h */,
 				4D566674246B7A8C0049AA64 /* Errors.swift */,
 				4D566676246B7A8D0049AA64 /* ImageManager.swift */,
 				4D566661246B7A230049AA64 /* AppDelegate.swift */,
@@ -97,8 +97,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DC47CE92476786900E692B4 /* CWInterface_Private.h in Headers */,
-				4DC47CE72476784E00E692B4 /* CWTetherDevice_Private.h in Headers */,
+				4D02B93124862EE8000EE3C3 /* CWTetherDevice_Private.h in Headers */,
+				4D02B92F24862EDB000EE3C3 /* CWInterface_Private.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

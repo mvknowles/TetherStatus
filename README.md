@@ -10,4 +10,4 @@ The app uses APIs internal to MacOS which were identified by debugging WiFiAgent
 
 ## Download
 
-You can download the app here: https://github.com/mvknowles/TetherStatus/releases/download/v1.0/TetherStatus.app.zip
+You can download the app here: https://github.com/mvknowles/TetherStatus/releases/download/v1.1/TetherStatus.app

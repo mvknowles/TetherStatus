@@ -13,7 +13,9 @@ The app uses APIs internal to macOS which were identified by debugging WiFiAgent
 You can download the app here: https://github.com/mvknowles/TetherStatus/releases/download/v1.2/TetherStatus.app.zip
 
 ## Hackery
-Check out my other project: https://github.com/mvknowles/machowalk
+This mini-project was an offshoot of my long-term project, called machowalk: https://github.com/mvknowles/machowalk
+
+Mach-O is the executable & library format used by MachOS. My project explores the internals of the Mach-O format.
 
 A lot of the internal details were already available via nm, otool or a good ol' hex editor. I started the above project to create a corpus of all the internal symbols. I'm working on adding details not exposed in the symbol table, by making inferences about types from Core Framework and the Objective-C messaging primitives. 
 

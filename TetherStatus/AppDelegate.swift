@@ -10,6 +10,10 @@ import Cocoa
 import SwiftUI
 import CoreWLAN
 
+class DefaultKeys {
+    public static var showDeviceKey = "showDeviceKey"
+}
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, CWEventDelegate {
 
@@ -24,7 +28,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, CWEventDelegate {
     
     public static var networkTypeNoService = 0
     public static var networkTypeLabels: [String] = [
-            "", "uk1", "uk2", "uk3", "3G", "uk5", "4G"]
+            "", "uk1", "uk2", "2G", "3G", "LTE", "4G", "5G"]
     
     required override init() {
         do {
@@ -143,7 +147,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, CWEventDelegate {
     private func createMenu() {
         let statusBarMenu = NSMenu(title: "TetherInfo Menu")
         let item = NSMenuItem(title: "Show device name", action: #selector(AppDelegate.toggleShowDeviceName), keyEquivalent: "")
-        item.state = NSControl.StateValue.off
+        item.state = NSControl.StateValue(rawValue:Int(UserDefaults.standard.integer(forKey: DefaultKeys.showDeviceKey))) //NSControl.StateValue.off
+        self.showDeviceName = item.state == NSControl.StateValue.on
         statusBarMenu.addItem(item)
         statusBarMenu.addItem(NSMenuItem.separator())
         statusBarMenu.addItem(
@@ -156,6 +161,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, CWEventDelegate {
     
     @objc func toggleShowDeviceName(item: NSMenuItem) {
         item.state = item.state == NSControl.StateValue.on ? NSControl.StateValue.off : NSControl.StateValue.on
+        UserDefaults.standard.set(item.state.rawValue, forKey:DefaultKeys.showDeviceKey)
         self.showDeviceName = item.state == NSControl.StateValue.on
         self.updateStatus()
     }

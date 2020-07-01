@@ -218,7 +218,14 @@ class ImageManager {
         }
 
         do {
-            returnImage = try returnImage.darkImage()
+            //let peanut = UserDefaults.standard.string(forKey: "AppleInterfaceStyle")!
+            //NSLog(String(describing:peanut))
+            if NSAppearance.current.name == NSAppearance.Name.darkAqua {
+                returnImage = try returnImage.darkImage()
+                NSLog("dark")
+            } else {
+                NSLog("light")
+            }
         } catch {
             NSLog("Couldn't create dark images")
             NSLog(error.localizedDescription)

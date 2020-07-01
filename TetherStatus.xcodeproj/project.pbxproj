@@ -14,7 +14,7 @@
 		4D56666C246B7A2A0049AA64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D56666A246B7A2A0049AA64 /* Main.storyboard */; };
 		4D566679246B7A8D0049AA64 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D566676246B7A8D0049AA64 /* ImageManager.swift */; };
 		4D879E3A24ACB65F003C5CAB /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D879E3924ACB65F003C5CAB /* Errors.swift */; };
-		4D879E3C24ACB95A003C5CAB /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D879E3B24ACB95A003C5CAB /* screenshot.png */; };
+		4D879E3E24ACB9BE003C5CAB /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D879E3D24ACB9BE003C5CAB /* Screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		4D56666E246B7A2A0049AA64 /* TetherStatus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TetherStatus.entitlements; sourceTree = "<group>"; };
 		4D566676246B7A8D0049AA64 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		4D879E3924ACB65F003C5CAB /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
-		4D879E3B24ACB95A003C5CAB /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		4D879E3D24ACB9BE003C5CAB /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
 		4DC47CEA247678C600E692B4 /* TetherStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TetherStatus.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +47,7 @@
 		4D566655246B7A230049AA64 = {
 			isa = PBXGroup;
 			children = (
-				4D879E3B24ACB95A003C5CAB /* screenshot.png */,
+				4D879E3D24ACB9BE003C5CAB /* Screenshot.png */,
 				4D155D27246CE5A7001A9B97 /* README.md */,
 				4D566660246B7A230049AA64 /* TetherStatus */,
 				4D56665F246B7A230049AA64 /* Products */,
@@ -159,8 +159,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D56666C246B7A2A0049AA64 /* Main.storyboard in Resources */,
-				4D879E3C24ACB95A003C5CAB /* screenshot.png in Resources */,
 				4D566666246B7A2A0049AA64 /* Assets.xcassets in Resources */,
+				4D879E3E24ACB9BE003C5CAB /* Screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

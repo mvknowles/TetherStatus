@@ -6,7 +6,9 @@ This is an app that shows the battery strength, signal strength and network type
 
 I created this app so users wouldn't have to click on the wireless status bar icon to view the details.
 
-The app uses APIs internal to MacOS which were identified by debugging WiFiAgent and some other inbuilt applications.
+The app uses APIs internal to macOS which were identified by debugging WiFiAgent and some other inbuilt applications. There's a wealth of information behind the scenes (particularly if you use the internal XPC interface), so if you're interested in more details, let me know. Unfortunately, to get extra details via XPC, we either need to disable System Integrity Protection (SIP) or have Apple Sign our App (lol). 
+
+If you're interested in behind-the-scenes XPC stuff, let me know. I'm surprised at how little this surface has been explored and enumerated.
 
 ## Download
 

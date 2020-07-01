@@ -2,7 +2,7 @@
 
 This is an app that shows the battery strength, signal strength and network type of the iPhone tethered to a Mac.
 
-![The app in use](screenshot.png "The app in use")
+![The app in use](Screenshot.png "The app in use")
 
 I created this app so users wouldn't have to click on the wireless status bar icon to view the details.
 

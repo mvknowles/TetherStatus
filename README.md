@@ -15,7 +15,7 @@ You can download the app here: https://github.com/mvknowles/TetherStatus/release
 ## Hackery
 This mini-project was an offshoot of my long-term project, called machowalk: https://github.com/mvknowles/machowalk
 
-Mach-O is the executable & library format used by MachOS. My project explores the internals of the Mach-O format.
+Mach-O is the executable & library format used by macOS. machowalk is designed to examine these files in bulk, to make reverse engineering a little-bit less brain-surgery-like.
 
 A lot of the internal details were already available via nm, otool or a good ol' hex editor. I started the above project to create a corpus of all the internal symbols. I'm working on adding details not exposed in the symbol table, by making inferences about types from Core Framework and the Objective-C messaging primitives. 
 

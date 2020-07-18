@@ -10,6 +10,18 @@ import Cocoa
 import SwiftUI
 import CoreWLAN
 
+
+extension NSView {
+    var isDarkMode: Bool {
+        if #available(OSX 10.14, *) {
+            if effectiveAppearance.name == .darkAqua {
+                return true
+            }
+        }
+        return false
+    }
+}
+
 class DefaultKeys {
     public static var showDeviceKey = "showDeviceKey"
 }
@@ -28,7 +40,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, CWEventDelegate {
     
     public static var networkTypeNoService = 0
     public static var networkTypeLabels: [String] = [
-            "", "uk1", "uk2", "2G", "3G", "LTE", "4G", "5G"]
+            "Search", "GSM", "GPRS", "EDGE", "3G", "4G", "LTE", "5G"]
     
     required override init() {
         do {
@@ -73,10 +85,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, CWEventDelegate {
         }
 
         self.updateStatus()
-        
-        /*let myTimer = Timer(timeInterval: 5.0, target: self, selector: #selector(self.updateStatus), userInfo: nil, repeats: true)
-        RunLoop.current.add(myTimer, forMode: RunLoop.Mode.common) */
-
     }
 
     private func isVisible() -> Bool {
@@ -117,6 +125,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, CWEventDelegate {
             let batteryLife = tetherDevice.batteryLife.floatValue
             let batteryIndex = Int(batteryLife / 10)        
             let batteryImage = self.imageManager.batteryImages[batteryIndex]
+            batteryImage.isTemplate = true
             var cellImage: NSImage
             
             if tetherDevice.signalStrength != nil {
@@ -124,6 +133,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, CWEventDelegate {
             } else {
                 cellImage = self.imageManager.cellImages[0]
             }
+            cellImage.isTemplate = true
             
             let networkTypeLabel = AppDelegate.networkTypeLabels[Int(tetherDevice.networkType)]
             let deviceName = tetherDevice.deviceName ?? String("No deviceName")

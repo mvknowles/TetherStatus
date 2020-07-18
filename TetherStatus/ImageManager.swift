@@ -24,6 +24,7 @@ extension NSImage {
         return ciImages
     }
     
+    
     func darkImage() throws -> NSImage  {
         let black = NSColor(red:0, green:0, blue:0, alpha:1.0)
         let white = NSColor(red:1, green:1, blue:1, alpha:1.0)
@@ -218,13 +219,8 @@ class ImageManager {
         }
 
         do {
-            //let peanut = UserDefaults.standard.string(forKey: "AppleInterfaceStyle")!
-            //NSLog(String(describing:peanut))
             if NSAppearance.current.name == NSAppearance.Name.darkAqua {
                 returnImage = try returnImage.darkImage()
-                NSLog("dark")
-            } else {
-                NSLog("light")
             }
         } catch {
             NSLog("Couldn't create dark images")
